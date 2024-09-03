@@ -34,6 +34,8 @@ def test_calc_pace():
 def test_calc_pace_with_added_zero():
     assert calc_pace("00:35:00", 10) == "If you ran 10.00 km in 00:35:00, your pace will be 3:30 min/km"
 
+def test_calc_pace_with_non_standard_seconds():
+    assert calc_pace("00:20:30", 5) == "If you ran 5.00 km in 00:20:30, your pace will be 4:05 min/km"
 
 def test_calc_time(capfd):
     calc_time("03:30", 10)

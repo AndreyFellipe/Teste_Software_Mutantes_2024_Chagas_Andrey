@@ -2,7 +2,7 @@ import pytest
 from pytest import approx
 from datetime import timedelta
 
-from running_calculator.core.utils import pace_to_number, time_to_number, time_to_string, duration
+from running_calculator.core.utils import pace_to_number, time_to_number, time_to_string, duration, get_distance, get_time, pause_end, cls
 
 
 @pytest.mark.parametrize(
@@ -60,7 +60,7 @@ def test_duration():
 
 # modules with input require some complex mocking, so i do it later
 
-
-
-
-
+def test_get_time(monkeypatch):
+    # Mock do input para retornar um valor específico
+    monkeypatch.setattr('builtins.input', lambda _: "00:20:00")
+    assert get_time() == timedelta(hours=0, minutes=20, seconds=0)

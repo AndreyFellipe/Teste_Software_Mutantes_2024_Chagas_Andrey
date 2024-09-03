@@ -1,0 +1,99 @@
+<html><body><h1>running_calculator/core/running_index.py</h1>Killed 17 out of 26 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 41</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -29,7 +29,7 @@
+         return self.vdot.loc[self.vdot[distance] == row].index.item()
+ 
+     def __print_results(self, ind):
+-        print("YOUR VDOT IS: ", ind, "\n")
++        print("XXYOUR VDOT IS: XX", ind, "\n")
+         print('{:~^20}'.format('PACES'))
+         print(self.paces_tab.ix[ind].to_frame())
+         print("")
+</pre><h3>Mutant 42</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -29,7 +29,7 @@
+         return self.vdot.loc[self.vdot[distance] == row].index.item()
+ 
+     def __print_results(self, ind):
+-        print("YOUR VDOT IS: ", ind, "\n")
++        print("YOUR VDOT IS: ", ind, "XX\nXX")
+         print('{:~^20}'.format('PACES'))
+         print(self.paces_tab.ix[ind].to_frame())
+         print("")
+</pre><h3>Mutant 43</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -30,7 +30,7 @@
+ 
+     def __print_results(self, ind):
+         print("YOUR VDOT IS: ", ind, "\n")
+-        print('{:~^20}'.format('PACES'))
++        print('XX{:~^20}XX'.format('PACES'))
+         print(self.paces_tab.ix[ind].to_frame())
+         print("")
+         print('{:~^20}'.format('RACING TIMES'))
+</pre><h3>Mutant 44</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -30,7 +30,7 @@
+ 
+     def __print_results(self, ind):
+         print("YOUR VDOT IS: ", ind, "\n")
+-        print('{:~^20}'.format('PACES'))
++        print('{:~^20}'.format('XXPACESXX'))
+         print(self.paces_tab.ix[ind].to_frame())
+         print("")
+         print('{:~^20}'.format('RACING TIMES'))
+</pre><h3>Mutant 45</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -32,7 +32,7 @@
+         print("YOUR VDOT IS: ", ind, "\n")
+         print('{:~^20}'.format('PACES'))
+         print(self.paces_tab.ix[ind].to_frame())
+-        print("")
++        print("XXXX")
+         print('{:~^20}'.format('RACING TIMES'))
+         print(self.vdot.ix[ind].to_frame().T)
+         print("")
+</pre><h3>Mutant 46</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -33,7 +33,7 @@
+         print('{:~^20}'.format('PACES'))
+         print(self.paces_tab.ix[ind].to_frame())
+         print("")
+-        print('{:~^20}'.format('RACING TIMES'))
++        print('XX{:~^20}XX'.format('RACING TIMES'))
+         print(self.vdot.ix[ind].to_frame().T)
+         print("")
+ 
+</pre><h3>Mutant 47</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -33,7 +33,7 @@
+         print('{:~^20}'.format('PACES'))
+         print(self.paces_tab.ix[ind].to_frame())
+         print("")
+-        print('{:~^20}'.format('RACING TIMES'))
++        print('{:~^20}'.format('XXRACING TIMESXX'))
+         print(self.vdot.ix[ind].to_frame().T)
+         print("")
+ 
+</pre><h3>Mutant 48</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -35,7 +35,7 @@
+         print("")
+         print('{:~^20}'.format('RACING TIMES'))
+         print(self.vdot.ix[ind].to_frame().T)
+-        print("")
++        print("XXXX")
+ 
+     def calculate(self, distance, time):
+         """Main method for running_index class
+</pre><h3>Mutant 49</h3><pre>--- running_calculator/core/running_index.py
++++ running_calculator/core/running_index.py
+@@ -40,6 +40,6 @@
+     def calculate(self, distance, time):
+         """Main method for running_index class
+         that print results from calculations"""
+-        coefficient = self.nearest(time, distance)
++        coefficient = None
+         self.__print_results(coefficient)
+ 
+</pre></body></html>

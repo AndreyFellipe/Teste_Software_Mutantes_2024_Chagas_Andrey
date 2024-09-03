@@ -1,0 +1,45 @@
+<html><body><h1>running_calculator/core/calculator.py</h1>Killed 19 out of 23 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 9</h3><pre>--- running_calculator/core/calculator.py
++++ running_calculator/core/calculator.py
+@@ -9,7 +9,7 @@
+ 
+     time = int(calculated_distance * calculated_pace)
+ 
+-    if time > 120:
++    if time >= 120:
+         return "Run in comfortable way for 2 hours."
+     return """
+         Your long run in this week should be: {0:.2f} km
+</pre><h3>Mutant 10</h3><pre>--- running_calculator/core/calculator.py
++++ running_calculator/core/calculator.py
+@@ -9,7 +9,7 @@
+ 
+     time = int(calculated_distance * calculated_pace)
+ 
+-    if time > 120:
++    if time > 121:
+         return "Run in comfortable way for 2 hours."
+     return """
+         Your long run in this week should be: {0:.2f} km
+</pre><h3>Mutant 19</h3><pre>--- running_calculator/core/calculator.py
++++ running_calculator/core/calculator.py
+@@ -23,7 +23,7 @@
+     minutes = int(pace)
+     seconds = int((pace - minutes) * 60)
+ 
+-    if seconds > 9:
++    if seconds >= 9:
+         return "If you ran {0:.2f} km in {1}, your pace will be {2}:{3} min/km"\
+             .format(distance, time, minutes, seconds)
+     return "If you ran {0:.2f} km in {1}, your pace will be {2}:0{3} min/km"\
+</pre><h3>Mutant 20</h3><pre>--- running_calculator/core/calculator.py
++++ running_calculator/core/calculator.py
+@@ -23,7 +23,7 @@
+     minutes = int(pace)
+     seconds = int((pace - minutes) * 60)
+ 
+-    if seconds > 9:
++    if seconds > 10:
+         return "If you ran {0:.2f} km in {1}, your pace will be {2}:{3} min/km"\
+             .format(distance, time, minutes, seconds)
+     return "If you ran {0:.2f} km in {1}, your pace will be {2}:0{3} min/km"\
+</pre></body></html>

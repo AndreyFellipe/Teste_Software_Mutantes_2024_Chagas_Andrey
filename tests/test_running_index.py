@@ -1,5 +1,5 @@
 import pytest
-
+import pandas as pd
 from running_calculator.core.running_index import RunningIndex
 
 
@@ -15,4 +15,10 @@ class TestRunningIndex:
     def test_nearest(self, target, distance, index):
         assert self.analyzer.nearest(target, distance) == index
 
+    def test_pd_option(self):
+        # Verifica se a configuração do pandas para exibição de DataFrame está correta
+        assert pd.get_option('display.expand_frame_repr') is False
 
+    def test_paces_tab_initialization(self):
+        # Verifica se paces_tab foi inicializado corretamente e não é None
+        assert self.analyzer.paces_tab is not None

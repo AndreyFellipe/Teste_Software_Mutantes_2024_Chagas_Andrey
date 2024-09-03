@@ -190,10 +190,11 @@ O caso de teste(Destacado em vermelho):
 
 ![image](https://github.com/user-attachments/assets/9e1cca17-9cd5-46e3-b1ef-00363cd21522)
 
-running_index.py: Adicionados dois casos de teste para eliminar os mutantes 31 e 41.
+running_index.py: Adicionados dois casos de teste para eliminar os mutantes 25 e 31.
 Os Mutantes:
 
-![image](https://github.com/user-attachments/assets/bc511ef8-57e7-4587-a2b7-29fa42595489)
+![image](https://github.com/user-attachments/assets/1f4d1fb2-82b1-4a72-bed9-8b4b32ccef6d)
+
 Os casos de teste(Destacados em vermelho):
 
 ![image](https://github.com/user-attachments/assets/52acdf88-8f9a-4711-956d-d87726645fdf)

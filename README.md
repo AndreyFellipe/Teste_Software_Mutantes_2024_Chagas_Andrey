@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![sonar](https://sonarcloud.io/api/project_badges/quality_gate?project=ronek22_runningCalculator)](https://sonarcloud.io/dashboard?id=ronek22_runningCalculator)
 
 [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/ronek22/runningCalculator/?ref=repository-badge)
@@ -22,3 +23,6 @@ pip install -r requirements.txt
 
 # Test online
 You can test it online [here.](https://repl.it/@ronek22/runningCalculator)
+=======
+# Teste_Software_Mutantes_2024_Chagas_Andrey
+>>>>>>> a437fbd20d901353ca79dfe2b5b2af378b91c6e5

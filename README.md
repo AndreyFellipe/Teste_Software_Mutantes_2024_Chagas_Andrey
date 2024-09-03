@@ -184,7 +184,7 @@ Exemplos de Casos Adicionados:
 calculator.py: Adicionado mais um caso de teste para eliminar o mutante 17.
 O Mutante:
 
-![image](https://github.com/user-attachments/assets/f0d7b97f-2f25-49c3-b224-795117918386)
+![image](https://github.com/user-attachments/assets/592adeaa-c718-4961-8595-49c6c1f23ab5)
 
 O caso de teste(Destacado em vermelho):
 
